@@ -1,0 +1,330 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>ECE 4502/6502 &amp; CS 6501: Graph Mining (Spring 2020)</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Jundong Li</div>
+<div class="menu-item"><a href="index.html" class="current">Home</a></div>
+<div class="menu-item"><a href="publications.html">Publications</a></div>
+<div class="menu-item"><a href="teaching.html">Teaching</a></div>
+<div class="menu-item"><a href="services.html">Services</a></div>
+<div class="menu-item"><a href="students.html">Students</a></div>
+<div class="menu-item"><a href="projects.html">Projects</a></div>
+<div class="menu-item"><a href="resources.html">Resources</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>ECE 4502/6502 &amp; CS 6501: Graph Mining (Spring 2020)</h1>
+<div id="subtitle">
+</div>
+</div>
+<h2>Course Logistics</h2>
+<ul>
+<li><p><b>Class Location</b>: Olsson Hall 011
+
+</p>
+</li>
+<li><p><b>Class Time</b>: Tuesday and Thursday 3:30PM - 4:45PM
+
+</p>
+</li>
+<li><p><b>Instructor</b>: <a href="http://people.virginia.edu/~jl6qk/" target=&ldquo;blank&rdquo;>Jundong Li</a>
+</p>
+<ul>
+<li><p>Email: jundong at virginia.edu
+</p>
+</li>
+<li><p>Office: E-226 Thornton Hall
+</p>
+</li>
+<li><p>Office hours: Thursday 2:00PM - 3:00PM
+
+</p>
+</li></ul>
+</li>
+<li><p><b>TA</b>: Yushun Dong, <a href="https://louise-lulin.github.io/" target=&ldquo;blank&rdquo;>Lu Lin</a>
+</p>
+<ul>
+<li><p>Email: yd6eb at virginia.edu, ll5fy at virginia.edu
+</p>
+</li>
+<li><p>Office hours: Lu Lin, Rice Hall 442, Wednesday 1:00PM - 2:00PM
+
+</p>
+</li>
+</ul>
+
+</li>
+</ul>
+<h2>Course Description</h2>
+<p>Graphs/networks are often used to represent a plethora of real-world phenomena: social relations among online users, hyperlinks among webpages, biological interactions among genes, brain activities among neurons, to name a few. How can we understand, characterize, and extract actionable knowledge from the deluge of graph data, to benefit high-impact applications from different disciplines? This course will introduce the fundamental problems and cover the recent research advances in analyzing and mining large-scale graphs. It will also discuss the practical applications and the broad impacts of graph mining algorithms in diverse settings (e.g., social media, e-commerce, education, and security). The following topics will be covered in the course: graph essentials, network measures, network models, data mining essentials, community analysis, information diffusion, recommendation, network representation learning, and graph neural networks.
+
+</p>
+<h2>Prerequisites</h2>
+<p>There are no official prerequisites for this course, but students are expected to:
+</p>
+<ul>
+<li><p>have basic knowledge about data mining and machine learning
+</p>
+</li>
+<li><p>be familiar with linear algebra, discrete mathematics, and statistics 
+</p>
+</li>
+<li><p>be comfortable to read research papers and give presentations 
+</p>
+</li>
+<li><p>have good programming skills, e.g, Python, C/C++, Java, Matlab, and R.
+
+</p>
+</li>
+</ul>
+<h2>Textbooks and Other Resources</h2>
+<p><b>Primary Textbook</b>
+</p>
+<ul>
+<li><p>&ldquo;<a href="http://dmml.asu.edu/smm/" target=&rdquo;blank&ldquo;>Social Media Mining: An Introduction</a>&rdquo; by Reza Zafarani, Mohammad Ali Abbasi, and Huan Liu. Cambridge University Press, 2014. (<a href="http://dmml.asu.edu/smm/" target=&ldquo;blank&rdquo;>Free download</a>)
+
+<b>Other Textbooks</b>:
+</p>
+</li>
+<li><p>&ldquo;<a href="https://www.amazon.com/Networks-Mark-Newman/dp/0198805098/ref=sr_1_2?qid=1578191834&amp;refinements=p_27%3AMark+Newman&amp;s=books&amp;sr=1-2&amp;text=Mark+Newman" target=&rdquo;blank&ldquo;>Networks: An Introduction</a>&rdquo; by Mark Newman. Oxford press, 2010.
+</p>
+</li>
+<li><p>&ldquo;<a href="http://www.cs.cornell.edu/home/kleinber/networks-book/" target=&rdquo;blank&ldquo;>Networks, Crowds, and Markets: Reasoning About a Highly Connected World</a>&rdquo; by David Easley and Jon Kleinberg. Oxford Press, 2010.
+
+<b>Some Related Courses (Disclaimer: some course slides are adapted from the above courses.)</b>
+</p>
+</li>
+<li><p>Huan Liu, <a href="http://www.public.asu.edu/~huanliu/SMM18F/cse472.htm" target=&ldquo;blank&rdquo;>CSE 472: Social Media Mining</a>, Arizona State University, Fall 2018.
+</p>
+</li>
+<li><p>Jure Leskovec, <a href="https://web.stanford.edu/class/cs224w/" target=&ldquo;blank&rdquo;>CS224W: Machine Learning with Graphs</a>, Stanford University, Fall 2019.
+</p>
+</li>
+<li><p>Davide Mottin and Konstantina Lazaridou, <a href="https://hpi.de/en/mueller/teaching/aktuelle-vorlesung/ws-1617/graph-mining.html" target=&ldquo;blank&rdquo;>Graph Mining</a>, Hasso Plattner Institute, Winter 2016.
+</p>
+</li>
+<li><p>Danai Koutra, <a href="https://web.eecs.umich.edu/~dkoutra/courses/F15_598/" target=&ldquo;blank&rdquo;>EECS 598: Graph Mining and Exploration at Scale: Methods and Applications</a>, University of Michigan, Fall 2015.
+
+<b>Graph Datasets</b>
+</p>
+</li>
+<li><p><a href="https://snap.stanford.edu/data/" target=&ldquo;blank&rdquo;>Stanford Large Network Dataset Collection</a>
+</p>
+</li>
+<li><p><a href="http://networkrepository.com/" target=&ldquo;blank&rdquo;>Network Repository - An Interactive Scientific Network Data Repository</a>
+</p>
+</li>
+<li><p><a href="http://socialcomputing.asu.edu/" target=&ldquo;blank&rdquo;>Social Computing Data Repository at ASU</a>
+</p>
+</li>
+<li><p><a href="http://konect.uni-koblenz.de/." target=&ldquo;blank&rdquo;>KONECT - The Koblenz Network Collection</a>
+
+<b>Software and Tools</b>
+</p>
+</li>
+<li><p><a href="https://gephi.org/" target=&ldquo;blank&rdquo;>The Open Graph Viz Platform</a>
+</p>
+</li>
+<li><p><a href="https://networkx.github.io/" target=&ldquo;blank&rdquo;>NetworkX</a>
+</p>
+</li>
+<li><p><a href="https://graph-tool.skewed.de/" target=&ldquo;blank&rdquo;>graph-tool</a>
+</p>
+</li>
+<li><p><a href="http://snap.stanford.edu/" target=&ldquo;blank&rdquo;>SNAP: Stanford Network Analysis Project</a>
+</p>
+</li>
+<li><p><a href="https://www.dgl.ai/" target=&ldquo;blank&rdquo;>Deep Graph Library</a>
+</p>
+</li>
+<li><p><a href="https://github.com/thunlp/OpenNE" target=&ldquo;blank&rdquo;>OpenNE: An open source toolkit for Network Embedding</a>
+
+</p>
+</li>
+</ul>
+<h2>Schedule (Tentative)</h2>
+<table id="TABLENAME">
+<tr class="r1"><td class="c1">Week  </td><td class="c2"> Date </td><td class="c3"> Content </td><td class="c4"> Event </td><td class="c5"> Due </td></tr>
+<tr class="r2"><td class="c1">1	</td><td class="c2">	01/14	</td><td class="c3">	<a href="sp20-graph-mining/lec1.pdf" target=&ldquo;blank&rdquo;>Introduction to Graph Mining</a>	</td><td class="c4"> 	</td><td class="c5"> 	</td></tr>
+<tr class="r3"><td class="c1"></td><td class="c2">	01/16	</td><td class="c3"> 	<a href="sp20-graph-mining/lec2.pdf" target=&ldquo;blank&rdquo;>Graph Essentials I</a>           	</td><td class="c4"> 	</td><td class="c5"> 	</td></tr>
+<tr class="r4"><td class="c1">2	</td><td class="c2">	01/21	</td><td class="c3"> 	<a href="sp20-graph-mining/lec3.pdf" target=&ldquo;blank&rdquo;>Graph Essentials II</a>		   	</td><td class="c4">   </td><td class="c5">	</td></tr>
+<tr class="r5"><td class="c1"></td><td class="c2">	01/23	</td><td class="c3">	<a href="sp20-graph-mining/lec4.pdf" target=&ldquo;blank&rdquo;>Network Measures I</a>			</td><td class="c4"> 	</td><td class="c5">	</td></tr>
+<tr class="r6"><td class="c1">	3	</td><td class="c2">	01/28	</td><td class="c3">	<a href="sp20-graph-mining/lec5.pdf" target=&ldquo;blank&rdquo;>Network Measures II</a>			</td><td class="c4">	HW1 Out </td><td class="c5">	</td></tr>
+<tr class="r7"><td class="c1"></td><td class="c2">	01/30	</td><td class="c3">	<a href="sp20-graph-mining/lec6.pdf" target=&ldquo;blank&rdquo;>Network Models I</a>				</td><td class="c4">	</td><td class="c5">	</td></tr>
+<tr class="r8"><td class="c1">	4	</td><td class="c2">	02/04	</td><td class="c3">	<a href="sp20-graph-mining/lec7.pdf" target=&ldquo;blank&rdquo;>Network Models II</a>					</td><td class="c4">	</td><td class="c5">	</td></tr>
+<tr class="r9"><td class="c1">		</td><td class="c2">	02/06	</td><td class="c3"> 	No Class                        </td><td class="c4">	</td><td class="c5">	</td></tr>
+<tr class="r10"><td class="c1">5	</td><td class="c2">	02/11	</td><td class="c3">	<a href="sp20-graph-mining/lec8.pdf" target=&ldquo;blank&rdquo;>Data Mining Essentials I</a>		</td><td class="c4">	</td><td class="c5">	</td></tr>
+<tr class="r11"><td class="c1">		</td><td class="c2">	02/13	</td><td class="c3">	<a href="sp20-graph-mining/lec9.pdf" target=&ldquo;blank&rdquo;>Data Mining Essentials II</a>		</td><td class="c4">	</td><td class="c5">	</td></tr>
+<tr class="r12"><td class="c1">6	</td><td class="c2">	02/18	</td><td class="c3">	<a href="sp20-graph-mining/lec10.pdf" target=&ldquo;blank&rdquo;>Community Analysis	I</a>	        </td><td class="c4">	</td><td class="c5">	</td></tr>
+<tr class="r13"><td class="c1"></td><td class="c2">	02/20	</td><td class="c3">	<a href="sp20-graph-mining/lec11.pdf" target=&ldquo;blank&rdquo;>Community Analysis	II</a>			</td><td class="c4">	</td><td class="c5">	Project Proposal Due </td></tr>
+<tr class="r14"><td class="c1">7	</td><td class="c2">	02/25	</td><td class="c3">	<a href="sp20-graph-mining/lec12.pdf" target=&ldquo;blank&rdquo;>Information Diffusion I</a>		    </td><td class="c4">	</td><td class="c5"> 	</td></tr>
+<tr class="r15"><td class="c1"></td><td class="c2">	02/27	</td><td class="c3">	<a href="sp20-graph-mining/lec13.pdf" target=&ldquo;blank&rdquo;>Information Diffusion II</a>		</td><td class="c4">	</td><td class="c5">	HW1 Due </td></tr>
+<tr class="r16"><td class="c1">	8	</td><td class="c2">	03/03	</td><td class="c3">	<a href="sp20-graph-mining/lec14.pdf" target=&ldquo;blank&rdquo;>Recommendation I</a>					</td><td class="c4">	</td><td class="c5">	</td></tr>
+<tr class="r17"><td class="c1">	</td><td class="c2">	03/05	</td><td class="c3">	<a href="sp20-graph-mining/lec15.pdf" target=&ldquo;blank&rdquo;>Recommendation	II</a>	            </td><td class="c4">   HW2 Out </td><td class="c5">   </td></tr>
+<tr class="r18"><td class="c1">9	</td><td class="c2"> 	03/10	</td><td class="c3">	No Class: Spring Break          </td><td class="c4">	</td><td class="c5">	</td></tr>
+<tr class="r19"><td class="c1"></td><td class="c2">   03/12	</td><td class="c3">	No Class: Spring Break          </td><td class="c4">   </td><td class="c5">   </td></tr>
+<tr class="r20"><td class="c1">10	</td><td class="c2">	03/17	</td><td class="c3">	<a href="sp20-graph-mining/examreview.pdf" target=&ldquo;blank&rdquo;>Midterm Exam Review</a>					</td><td class="c4">   </td><td class="c5">   </td></tr>
+<tr class="r21"><td class="c1">	</td><td class="c2">	03/19	</td><td class="c3">	Midterm Exam (Online)					</td><td class="c4">	Exam </td><td class="c5">	</td></tr>
+<tr class="r22"><td class="c1">		11	</td><td class="c2">	03/24	</td><td class="c3">	Network Embedding (Online)					</td><td class="c4">	</td><td class="c5">	</td></tr>
+<tr class="r23"><td class="c1">		</td><td class="c2">	03/26	</td><td class="c3">	No Class               			</td><td class="c4">	</td><td class="c5">	 </td></tr>
+<tr class="r24"><td class="c1">12	</td><td class="c2">	03/31	</td><td class="c3">	Graph Neural Networks (Online)			</td><td class="c4">	</td><td class="c5">	Project Progress Report Due </td></tr>
+<tr class="r25"><td class="c1"></td><td class="c2">	04/02	</td><td class="c3">	Paper Presentation (Online)		        </td><td class="c4">   </td><td class="c5">   </td></tr>
+<tr class="r26"><td class="c1">13	</td><td class="c2">	04/07	</td><td class="c3">	Paper Presentation (Online)			</td><td class="c4">	</td><td class="c5">	</td></tr>
+<tr class="r27"><td class="c1"></td><td class="c2">	04/09	</td><td class="c3">	Paper Presentation (Online)			</td><td class="c4">	</td><td class="c5">	HW2 Due </td></tr>
+<tr class="r28"><td class="c1">14	</td><td class="c2">	04/14	</td><td class="c3">	Paper Presentation (Online)	            </td><td class="c4">	</td><td class="c5">	</td></tr>
+<tr class="r29"><td class="c1">	</td><td class="c2">	04/16	</td><td class="c3">	Paper Presentation (Online)				</td><td class="c4">	</td><td class="c5">	</td></tr>
+<tr class="r30"><td class="c1">15	</td><td class="c2">	04/21	</td><td class="c3">	Final Project Presentation (Online)			</td><td class="c4">	</td><td class="c5">	</td></tr>
+<tr class="r31"><td class="c1"></td><td class="c2">	04/23	</td><td class="c3">	Final Project Presentation (Online)			</td><td class="c4">	</td><td class="c5">	</td></tr>
+<tr class="r32"><td class="c1">16	</td><td class="c2">	04/28	</td><td class="c3">	Final Project Presentation (Online)		</td><td class="c4">	</td><td class="c5">	Project Final Report Due on May 5th
+</td></tr></table>
+<h2>Grading Policy</h2>
+<ul>
+<li><p>Class participation: 5%
+</p>
+<ul>
+<li><p>There will be 5 pop quizzes at randomly selected lectures, students can miss at most 1 quizz to get all 5 participation points.
+</p>
+</li>
+<li><p>Attended &gt;=4 quizzes (5 points), 3 quizzes (4 points), 2 quizzes (3 points), 1 quizz (1 point), 0 quizz (0 point).
+</p>
+</li></ul>
+</li>
+<li><p>Homework assignment: 30%
+</p>
+<ul>
+<li><p>There will be 2 homework assignment and each homework is worth 15%.
+</p>
+</li>
+<li><p>Each homework consists of written questions and programming questions, and only electronic submission is allowed.
+</p>
+</li>
+<li><p>Undergraduate and graduate students will be assigned different set of questions.
+</p>
+</li>
+<li><p>All assignments follow the &ldquo;no-late&rdquo; policy. Assignments received after the due time (11:59pm on the due day) will receive zero credit.
+</p>
+</li></ul>
+</li>
+<li><p>Exam (1 midterm): 20%
+</p>
+<ul>
+<li><p>The midterm exam will be held after the spring break during the class time.
+</p>
+</li>
+<li><p>One page (two sides) cheet sheet is allowed for the exam.
+</p>
+</li></ul>
+</li>
+<li><p>Paper Presentation: 15%
+</p>
+<ul>
+<li><p>Students need to team up with their project team members to present a research paper related to the proposed project.
+</p>
+</li>
+<li><p>The presentation will be graded by the instructor, the TA, and all other students.
+</p>
+</li>
+<li><p>The selected papers need to be confirmed with the instructor and TA at least 2 weeks before the presentation day.
+</p>
+</li>
+<li><p>The slides of your presentation need to be sent to the instructor and TA by 11:59PM the night before your presentation.
+</p>
+</li>
+<li><p>The grading will be based on the clarity, content, critiques and insightful comments, timing, and handling of questions.
+</p>
+</li></ul>
+</li>
+<li><p>Project: 30% 
+</p>
+<ul>
+<li><p>Teams with only graduate students: 1~2 people; Teams with undergrdatuate students: 1~3 people.
+</p>
+</li>
+<li><p>Students are expected to investigate a research problem related to graph mining and ideally related to their own research.
+</p>
+</li>
+<li><p>You need to deliver the following for your project: 
+</p>
+<ul>
+<li><p>Project Proposal Report (5%)
+</p>
+</li>
+<li><p>Project Progress Report (5%)
+</p>
+</li>
+<li><p>Project Presentation (10%)
+</p>
+</li>
+<li><p>Project Report (10%) 
+</p>
+</li>
+<li><p>Project proposal and report also follow the &ldquo;no-late&rdquo; policy
+
+
+
+
+</p>
+</li>
+</ul>
+
+</li>
+</ul>
+
+</li>
+</ul>
+<h2>Other Related Statements</h2>
+<p><b>Honor Code</b> (Adapted from <a href="https://honor.virginia.edu/statement" target=&ldquo;blank&rdquo;>Honor Syllabus Example Statement of UVa</a>)
+
+I trust every student in this course to fully comply with all of the provisions of the University’s Honor Code. By enrolling in this course, you have agreed to abide by and uphold the Honor System of the University of Virginia, as well as the policies specific to this course. All suspected violations will be forwarded to the Honor Committee, and you may, at my discretion, receive an immediate zero on that assignment regardless of any action taken by the Honor Committee.
+
+Please let me know if you have any questions regarding the course honor policy. If you believe you may have committed an Honor Offense, you may wish to file a Conscientious Retraction by calling the Honor Offices at (434) 924-7602. For your retraction to be considered valid, it must, among other things, be filed with the Honor Committee before you are aware that the act in question has come under suspicion by anyone. More information can be found at <a href="https://honor.virginia.edu/" target=&ldquo;blank&rdquo;>https:/<i>honor.virginia.edu/</a>.
+
+<b>Students with Disabilities or Special Needs</b>
+
+Please contact the instructor at the beginning of the semester.
+The University of Virginia strives to provide accessibility to all students. If you require an accommodation to fully access this course, please contact the Student Disability Access Center (SDAC) at (434) 243-5180 or sdac@virginia.edu. If you are unsure if you require an accommodation, or to learn more about their services, you may contact the SDAC at the number above or by visiting their website at <a href="http://studenthealth.virginia.edu/student-disability-access-center/faculty-staff" target=&ldquo;blank&rdquo;>http:/</i>studenthealth.virginia.edu/student-disability-access-center/faculty-staff</a>.
+
+<b>Violence Prevention and Sexual Assault Prevention</b>
+
+The University of Virginia is dedicated to providing a safe and equitable learning environment for all students. To that end, it is vital that you know two values that I and the University hold as critically important:
+
+</p>
+<ul>
+<li><p>Power-based personal violence will not be tolerated. 
+</p>
+</li>
+<li><p>Everyone has a responsibility to do their part to maintain a safe community on Grounds.
+
+If you or someone you know has been affected by power-based personal violence, more information can be found on the UVA Sexual Violence website that describes reporting options and resources available - <a href="https://eocr.virginia.edu/" target=&ldquo;blank&rdquo;>https:/<i>eocr.virginia.edu/</a>. 
+
+As your professor and as a person, know that I care about you and your well-being and stand ready to provide support and resources as I can. As a faculty member, I am a responsible employee, which means that I am required by University policy and federal law to report what you tell me to the University's Title IX Coordinator. The Title IX Coordinator's job is to ensure that the reporting student receives the resources and support that they need, while also reviewing the information presented to determine whether further action is necessary to ensure survivor safety and the safety of the University community. If you would rather keep this information confidential, there are Confidential Employees you can talk to on Grounds (See <a href="http://www.virginia.edu/justreportit/" target=&ldquo;blank&rdquo;>http:/</i>www.virginia.edu/justreportit/</a>). The worst possible situation would be for you or your friend to remain silent when there are so many here willing and able to help.
+
+<b>Religious Accommodations</b>
+
+It is the University's long-standing policy and practice to reasonably accommodate students so that they do not experience an adverse academic consequence when sincerely held religious beliefs or observances conflict with academic requirements.
+Students who wish to request academic accommodation for a religious observance should submit their request in writing directly to me by email as far in advance as possible. Students and instructors who have questions or concerns about academic accommodations for religious observance or religious beliefs may contact the University’s Office for Equal Opportunity and Civil Rights (EOCR) at UVAEOCR@virginia.edu or 434-924-3200.
+Accommodations do not relieve you of the responsibility for completion of any part of the coursework missed as the result of a religious observance.
+
+
+</p>
+</li>
+</ul>
+<div id="footer">
+<div id="footer-text">
+Page generated 2020-12-08 23:13:46 EST, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
