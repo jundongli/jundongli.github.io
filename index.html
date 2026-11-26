@@ -34,6 +34,12 @@ html, body { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .research details.plist > summary:focus-visible { outline: 2px solid #527bbd; outline-offset: 2px; }
 .research details.plist ul.papers { margin-top: 0.3em; font-size: 95%; }
 .research h3 { margin-top: 1.2em; }
+.research.pubs > h3:first-child { margin-top: 0.6em; }
+.research.pubs div.topic { border-left: 3px solid #224b8d; padding: 0.15em 0 0.15em 0.9em; margin: 1.1em 0 0; }
+.research.pubs div.topic:first-child { margin-top: 0.6em; }
+.research.pubs div.topic > h3 { margin: 0 0 0.35em; padding-bottom: 0; border-bottom: none; }
+.research.pubs div.topic p.blurb { margin-bottom: 0.3em; }
+.research.pubs div.topic details.plist { margin-bottom: 0.1em; }
 .research span.venue.conf { color: #1f4e9c; background: #e3ecfb; border: 1px solid #c3d5f4; }
 .research span.venue.jour { color: #1d6b4f; background: #e2f3eb; border: 1px solid #bfe2d1; }
 .research span.venue.book { color: #5b3f8f; background: #eee8f8; border: 1px solid #d7cbee; }
@@ -93,7 +99,11 @@ Charlottesville, VA 22904-4743 <br />
 <li><a href="#graph" class="area">Graph Machine Learning</a> &mdash; <i>Graph prompting</i> (<a href="https://arxiv.org/abs/2503.00750">Edge Prompt Tuning</a>, ICLR&#x27;25; <a href="https://openreview.net/forum?id=N2f6N4jopz">GraphTOP</a>, NeurIPS&#x27;25), <i>spectral analysis</i> of GNNs (<a href="https://openreview.net/forum?id=nWdQX5hOL9">Spectral Benchmark</a>, ICLR&#x27;25), <i>federated</i> graph learning (<a href="https://ojs.aaai.org/index.php/AAAI/article/view/33830">FedVN</a>, AAAI&#x27;25; <a href="https://openreview.net/forum?id=snLnJfOkS4">FedTAG</a>, LoG&#x27;26), <i>spatial-temporal</i> forecasting (<a href="https://ojs.aaai.org/index.php/AAAI/article/view/33310">ST-FiT</a>, AAAI&#x27;25; <a href="https://arxiv.org/abs/2609.36119">AdaST</a>, NeurIPS&#x27;26).</li>
 <li><a href="#science" class="area">AI for Science and Health</a> &mdash; <i>Protein and molecule</i> modeling (<a href="https://dl.acm.org/doi/10.1145/3711896.3736931">EBM-DDG</a>, KDD&#x27;25; <a href="https://dl.acm.org/doi/10.1145/3773966.3777928">MolEdit</a>, WSDM&#x27;26), <i>single-cell</i> analysis (<a href="https://academic.oup.com/bioinformatics/article/42/2/btaf655/8371888">CeLLTra</a>, Bioinformatics&#x27;25), <i>brain network</i> analysis (<a href="https://ojs.aaai.org/index.php/AAAI/article/view/33581">BrainMAP</a>, AAAI&#x27;25; <a href="https://arxiv.org/abs/2602.09294">BrainTAP</a>, ISBI&#x27;26), <i>clinical risk</i> prediction (<a href="https://ieeexplore.ieee.org/document/11634921">UHES</a>, ICHI&#x27;26), <i>particle accelerator</i> operations (<a href="https://openreview.net/forum?id=jnReRk2EX1">BeamExplainer</a>, TMLR&#x27;26).</li>
 </ul>
-<hr class="sep" />
+</div>
+
+<h2>Selected Publications</h2>
+<div class="research pubs">
+<div class="topic">
 <h3 id="reasoning">LLM Reasoning and Post-Training</h3>
 <p class="blurb">Reasoning models are powerful but costly. We make LLM reasoning more efficient and better targeted through token-efficient and implicit chain-of-thought, reasoning distillation, multi-route and multi-agent inference, model fusion, and post-training for LLM-based recommendation.</p>
 <details class="plist"><summary>Representative papers</summary>
@@ -110,6 +120,8 @@ Charlottesville, VA 22904-4743 <br />
 <li><span class="venue conf">WWW'24</span> <a href="https://dl.acm.org/doi/10.1145/3589334.3645347">Collaborative Large Language Model for Recommender Systems</a></li>
 </ul>
 </details>
+</div>
+<div class="topic">
 <h3 id="knowledge">Knowledge, Memory, and Retrieval</h3>
 <p class="blurb">We study how LLMs acquire, keep, and use knowledge, including knowledge updating and evolving agent memory, reasoning and retrieval over knowledge graphs, filtering noisy retrieved documents, and selecting in-context demonstrations.</p>
 <details class="plist"><summary>Representative papers</summary>
@@ -125,6 +137,8 @@ Charlottesville, VA 22904-4743 <br />
 <li><span class="venue conf">ICML'25</span> <a href="https://openreview.net/forum?id=MOlihFnYNU">MAPLE: Many-Shot Adaptive Pseudo-Labeling In-Context Learning</a></li>
 </ul>
 </details>
+</div>
+<div class="topic">
 <h3 id="trust">Interpretability and Trustworthy AI</h3>
 <p class="blurb">We aim to understand how models compute their answers and to make them reliable where decisions matter, through mechanistic interpretability, causal inference, fairness, safety alignment, and machine unlearning.</p>
 <details class="plist"><summary>Representative papers</summary>
@@ -140,6 +154,8 @@ Charlottesville, VA 22904-4743 <br />
 <li><span class="venue conf">ICML'24</span> <a href="https://openreview.net/forum?id=OkChMnjF6s">Verification of Machine Unlearning is Fragile</a></li>
 </ul>
 </details>
+</div>
+<div class="topic">
 <h3 id="graph">Graph Machine Learning</h3>
 <p class="blurb">We develop graph learning methods that adapt pretrained models with lightweight prompts, explain GNN behavior from a spectral perspective, learn across private graphs with federated learning, and forecast spatial-temporal dynamics.</p>
 <details class="plist"><summary>Representative papers</summary>
@@ -153,6 +169,8 @@ Charlottesville, VA 22904-4743 <br />
 <li><span class="venue conf">AAAI'25</span> <a href="https://ojs.aaai.org/index.php/AAAI/article/view/33310">ST-FiT: Inductive Spatial-Temporal Forecasting with Limited Training Data</a></li>
 </ul>
 </details>
+</div>
+<div class="topic">
 <h3 id="science">AI for Science and Health</h3>
 <p class="blurb">We apply these methods to scientific and clinical problems, including protein and molecule modeling, single-cell analysis, brain networks, clinical risk prediction, and particle accelerator operations.</p>
 <details class="plist"><summary>Representative papers</summary>
@@ -166,6 +184,7 @@ Charlottesville, VA 22904-4743 <br />
 <li><span class="venue conf">AAAI'25</span> <a href="https://ojs.aaai.org/index.php/AAAI/article/view/33581">BrainMAP: Learning Multiple Activation Pathways in Brain Networks</a></li>
 </ul>
 </details>
+</div>
 </div>
 <!--
 </div></div>
